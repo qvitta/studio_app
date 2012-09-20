@@ -41,3 +41,5 @@ group :development do
   gem 'pry'
   gem 'pry-doc'
 end
+
+gem 'comfortable_mexican_sofa'
