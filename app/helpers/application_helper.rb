@@ -19,6 +19,7 @@ end
 
 module ApplicationHelper
   def body_classes
+    #binding.pry
     BodyClasser.new(self).to_html
   end
 end

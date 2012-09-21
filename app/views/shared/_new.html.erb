@@ -1,0 +1,11 @@
+<%= params[:cms_path] %>
+<% @cms_site.pages.root.children.published.each do |page| %>
+  <%= link_to page.label, page.full_path %>
+<% end %>
+<div>
+  <ul id="foo1">
+    <li>uno</li>
+    <li>dos</li>
+    <li>tres</li>
+  </ul>
+</div>

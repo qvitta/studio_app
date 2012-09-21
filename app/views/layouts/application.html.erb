@@ -3,6 +3,8 @@
 <head>
   <title>StudioApp</title>
   <%= stylesheet_link_tag    "application", :media => "all" %>
+  <%= stylesheet_link_tag cms_css_path(1, "base") %>
+  <%= javascript_include_tag  cms_js_path(1, "base") %>
   <%= javascript_include_tag "application" %>
   <%= csrf_meta_tags %>
 </head>
