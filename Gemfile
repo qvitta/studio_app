@@ -43,3 +43,4 @@ group :development do
 end
 
 gem 'comfortable_mexican_sofa'
+gem 'comfy_gallery'
