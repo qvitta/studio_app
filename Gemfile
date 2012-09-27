@@ -44,3 +44,14 @@ end
 
 gem 'comfortable_mexican_sofa'
 gem 'comfy_gallery'
+
+group :test do
+end
+
+group :test, :development do
+  gem 'rspec-rails'
+  gem 'capybara'
+  gem 'guard-rspec'
+  gem 'libnotify'
+  gem 'rb-inotify'
+end
