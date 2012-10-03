@@ -1,4 +1,4 @@
-<div class="<%= resource_name %>">
-  <h2>Details for <%= resource_name %>:</h2>
-  <%= resource.inspect %>
+<div class="<%= resource_instance_name %>">
+  <h2>Details for <%= resource_instance_name %>:</h2>
+  <%= link_to "show", resource_url(resource) %>
 </div>

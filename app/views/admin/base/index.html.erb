@@ -1,6 +1,10 @@
-<h1>Listing <%= collection_name %></h1>
+<% content_for :title do %>
+  <h1>Listing <%= resource_collection_name %></h1>
+<% end %>
 
 <%= render 'collection_list' %>
+
+<%= link_to "New Resource", new_resource_url %>
 
 <% content_for :sidebar do %>
   <%= render 'sidebar' %>

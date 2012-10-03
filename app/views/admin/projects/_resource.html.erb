@@ -1,3 +1,7 @@
-<div class="<%= resource_name %>">
-  Details for <%= resource_name %>: <%= resource.inspect %>
-</div>
+<%= div_for(resource) do  %>
+  <h3>Details for Project: <%= resource.name %></h3>
+  <div class="description">
+    <%= raw resource.description %>
+  </div>
+  <%= link_to "Show", resource_url(resource) %>
+<% end %>
