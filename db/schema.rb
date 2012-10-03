@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120921154745) do
+ActiveRecord::Schema.define(:version => 20121003141033) do
 
   create_table "cms_blocks", :force => true do |t|
     t.integer  "page_id",    :null => false
@@ -168,5 +168,12 @@ ActiveRecord::Schema.define(:version => 20120921154745) do
   end
 
   add_index "gallery_photos", ["gallery_id", "position"], :name => "index_gallery_photos_on_gallery_id_and_position"
+
+  create_table "projects", :force => true do |t|
+    t.string   "name"
+    t.text     "description"
+    t.datetime "created_at",  :null => false
+    t.datetime "updated_at",  :null => false
+  end
 
 end
