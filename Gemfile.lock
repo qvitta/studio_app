@@ -63,6 +63,7 @@ GEM
     erubis (2.7.0)
     execjs (1.4.0)
       multi_json (~> 1.0)
+    ffaker (1.15.0)
     ffi (1.1.5)
     guard (1.3.3)
       listen (>= 0.4.2)
@@ -196,6 +197,7 @@ DEPENDENCIES
   coffee-rails (~> 3.2.1)
   comfortable_mexican_sofa
   comfy_gallery
+  ffaker
   guard-rspec
   inherited_resources
   jquery-rails
