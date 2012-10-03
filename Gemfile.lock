@@ -1,3 +1,12 @@
+PATH
+  remote: ./qadmin
+  specs:
+    qadmin (0.0.1)
+      bootstrap-sass
+      inherited_resources
+      rails (~> 3.2.8)
+      simple_form
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -192,23 +201,21 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  bootstrap-sass
   capybara
   coffee-rails (~> 3.2.1)
   comfortable_mexican_sofa
   comfy_gallery
   ffaker
   guard-rspec
-  inherited_resources
   jquery-rails
   libnotify
   pry
   pry-doc
+  qadmin!
   rails (= 3.2.8)
   rb-inotify
   rspec-rails
   sass-rails (~> 3.2.3)
-  simple_form
   sqlite3
   uglifier (>= 1.0.3)
   unicorn
