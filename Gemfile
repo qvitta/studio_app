@@ -22,6 +22,18 @@ end
 
 gem 'jquery-rails'
 
+gem 'comfortable_mexican_sofa'
+gem 'comfy_gallery'
+
+if ENV['LOCAL_GEMS'] == '1'
+  gem 'qvitta_admin', path: '../qvitta_admin'
+else
+  gem 'qvitta_admin', git: 'https://github.com/qvitta/qvitta_admin.git', branch: 'develop'
+end
+
+gem 'draper'
+gem 'cells'
+
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
 
@@ -29,7 +41,7 @@ gem 'jquery-rails'
 # gem 'jbuilder'
 
 # Use unicorn as the app server
-# gem 'unicorn'
+gem 'unicorn'
 
 # Deploy with Capistrano
 # gem 'capistrano'
@@ -38,20 +50,19 @@ gem 'jquery-rails'
 # gem 'debugger'
 
 group :development do
+  gem 'guard-rspec'
+  gem 'libnotify'
+  gem 'rb-inotify'
   gem 'pry'
   gem 'pry-doc'
 end
 
-gem 'comfortable_mexican_sofa'
-gem 'comfy_gallery'
-
 group :test do
+  gem 'capybara'
 end
 
 group :test, :development do
   gem 'rspec-rails'
-  gem 'capybara'
-  gem 'guard-rspec'
-  gem 'libnotify'
-  gem 'rb-inotify'
+  gem 'rspec-cells'
+  gem 'ffaker'
 end

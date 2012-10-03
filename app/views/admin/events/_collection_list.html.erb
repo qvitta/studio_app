@@ -1,0 +1,24 @@
+<table class="table">
+  <thead>
+    <tr>
+      <th>ID</th>
+      <th>name</th>
+      <th>due at</th>
+      <th>Actions</th>
+    </tr>
+  </thead>
+  <tbody>
+    <% collection.each do |item| %>
+      <tr id="event-<%= item.id %>">
+        <td><%= item.id %></td>
+        <td><%= item.name %></td>
+        <td><%= item.due_at %></td>
+        <td>
+          <%= link_to "Show", resource_url(item) %>
+          <%= link_to "Edit", edit_resource_url(item) %>
+          <%= link_to "Delete", resource_url(item), method: 'delete', confirm: "sure?", remote: true %>
+        </td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>

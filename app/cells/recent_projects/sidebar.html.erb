@@ -1,0 +1,6 @@
+<ul class="nav nav-list">
+  <li class="nav-header">Recent Projects</li>
+  <% @recent_projects.each do |project| %>
+    <li><%= link_to project.name, admin_project_path(project) %></li>
+  <% end %>
+</ul>

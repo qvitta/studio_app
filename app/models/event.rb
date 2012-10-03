@@ -1,5 +1,7 @@
 class Event < ActiveRecord::Base
-  attr_accessible :description, :due_at, :location, :name
+  attr_accessible :name, :location, :due_at, :description
 
-  scope :cms_collection, ->  {}
+  def self.cms_collection(*args)
+    scoped
+  end
 end

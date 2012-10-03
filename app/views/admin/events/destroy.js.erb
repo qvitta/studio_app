@@ -1,0 +1,3 @@
+$('#flashes').html($('<div>').addClass('alert alert-success').html("Eliminado evento: <%= resource.name %>"));
+$('tr#event-<%= resource.id %>').remove();
+

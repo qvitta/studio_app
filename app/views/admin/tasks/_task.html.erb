@@ -1,0 +1,6 @@
+<%= content_tag_for(:li, task) do %>
+  <h4><%= task.name %></h4>
+  <div class="project"> <strong>Project:</strong> <%= task.project %> </div>
+  <div class="done"> <strong>Done:</strong> <%= task.done %> </div>
+  <%= link_to "show", resource_url(task) %>
+<% end %>

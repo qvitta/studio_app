@@ -5,3 +5,13 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
+
+if Rails.env.development?
+  require 'ffaker'
+  50.times do |n|
+    Event.create(name: Faker::Lorem.sentence, location: Faker::Address.city, due_at: rand(150).days.from_now)
+    if (rand(2300) % 5) == 0
+      Project.create(name: Faker::Company.name, description: Faker::Lorem.paragraphs.join('\n\n'))
+    end
+  end
+end
