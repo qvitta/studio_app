@@ -25,7 +25,11 @@ gem 'jquery-rails'
 gem 'comfortable_mexican_sofa'
 gem 'comfy_gallery'
 
-gem 'qadmin', path: './qadmin'
+if ENV['LOCAL_GEMS'] == '1'
+  gem 'qvitta_admin', path: '../qvitta_admin'
+else
+  gem 'qvitta_admin', git: 'https://github.com/qvitta/qvitta_admin.git', branch: 'develop'
+end
 
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
