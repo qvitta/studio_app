@@ -31,6 +31,9 @@ else
   gem 'qvitta_admin', git: 'https://github.com/qvitta/qvitta_admin.git', branch: 'develop'
 end
 
+gem 'draper'
+gem 'cells'
+
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
 
@@ -60,5 +63,6 @@ end
 
 group :test, :development do
   gem 'rspec-rails'
+  gem 'rspec-cells'
   gem 'ffaker'
 end
