@@ -1,0 +1,21 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <title>Admin <%= controller_name %>::<%= action_name %></title>
+  </head>
+  <body>
+     <div id="page">
+       <div id="main">
+         <% flash.each do |key, value| %>
+           <%= content_tag(:div, value, class: "flash #{key}") %>
+         <% end %>
+         <%= yield %>
+       </div>
+       <% if content_for? :sidebar %>
+         <div id="sidebar">
+           <%= yield(:sidebar) %>
+         </div>
+       <% end %>
+     </div>
+  </body>
+</html>
