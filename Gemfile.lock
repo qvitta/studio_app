@@ -1,7 +1,7 @@
 PATH
   remote: vendor/gems/qvitta_admin
   specs:
-    qvitta_admin (0.0.1)
+    q_admin (0.0.1.alpha1)
       bootstrap-sass (~> 2.1.0)
       inherited_resources (~> 1.3.1)
       jquery-rails
@@ -228,7 +228,7 @@ DEPENDENCIES
   pg
   pry
   pry-doc
-  qvitta_admin!
+  q_admin!
   rails (= 3.2.8)
   rb-inotify
   rspec-cells

@@ -24,7 +24,7 @@ gem 'jquery-rails'
 gem 'comfortable_mexican_sofa'
 gem 'comfy_gallery'
 
-gem 'qvitta_admin', path: 'vendor/gems/qvitta_admin'
+gem 'q_admin', path: 'vendor/gems/qvitta_admin'
 
 gem 'draper'
 gem 'cells'
