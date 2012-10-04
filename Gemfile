@@ -24,11 +24,7 @@ gem 'jquery-rails'
 gem 'comfortable_mexican_sofa'
 gem 'comfy_gallery'
 
-if ENV['LOCAL_GEMS'] == '1'
-  gem 'qvitta_admin', path: '../qvitta_admin'
-else
-  gem 'qvitta_admin', git: 'https://github.com/qvitta/qvitta_admin.git', branch: 'develop'
-end
+gem 'qvitta_admin', path: 'vendor/gems/qvitta_admin'
 
 gem 'draper'
 gem 'cells'
