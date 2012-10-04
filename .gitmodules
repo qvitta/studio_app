@@ -1,0 +1,3 @@
+[submodule "vendor/gems/q_admin"]
+	path = vendor/gems/q_admin
+	url = https://github.com/qvitta/qvitta_admin.git

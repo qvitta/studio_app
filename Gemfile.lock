@@ -1,5 +1,5 @@
 PATH
-  remote: vendor/gems/qvitta_admin
+  remote: vendor/gems/q_admin
   specs:
     q_admin (0.0.1.alpha1)
       bootstrap-sass (~> 2.1.0)
