@@ -1,7 +1,5 @@
-GIT
-  remote: https://github.com/qvitta/qvitta_admin.git
-  revision: 5f509b41b16a0ace99b40a3ca458cb545069a72b
-  branch: develop
+PATH
+  remote: vendor/gems/qvitta_admin
   specs:
     qvitta_admin (0.0.1)
       bootstrap-sass (~> 2.1.0)
